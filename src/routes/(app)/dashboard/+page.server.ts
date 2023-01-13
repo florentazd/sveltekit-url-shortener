@@ -8,6 +8,7 @@ export const load: ServerLoad = async ({ locals }) => {
 
     // Get all links created by the user
     const links = JSON.parse(JSON.stringify(await locals.pb.collection("links").getFullList(200, {
+        filter: `id = '${user.id}'`,
         sort: "-created"
     })))
 

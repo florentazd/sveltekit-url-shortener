@@ -50,7 +50,7 @@ export const actions: Actions = {
                 // The email already exist 
                 errorMessage = "L'email utilisé existe déjà"
                 // return the error to the client
-                return fail(400, { errorMessage: errorMessage })
+                return fail(400, { authMessage: errorMessage })
         }
     }
 }
