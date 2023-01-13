@@ -23,7 +23,7 @@
 {#each links as link}
 <div>
     <p>Lien original: {link.origin}</p>
-    <p>Lien court: http://127.0.0.1:5173/{link.short}</p>
+    <p>Lien court: {link.short}</p>
     <p>nombre de vue: {link.views}</p>
     <form action="?/drop" method="post">
         <button>Supprimer</button>
